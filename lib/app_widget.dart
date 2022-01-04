@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:linkedln/modules/Splash/Splash_page.dart';
+import 'package:linkedln/modules/feed_page/feed_page.dart';
 import 'package:linkedln/modules/login_page/login_page.dart';
 import 'package:linkedln/modules/sign_page/sign_page.dart';
 
@@ -15,11 +16,12 @@ class _AppWidgetState extends State<AppWidget> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(primaryColor: Colors.white, primarySwatch: Colors.grey),
-      initialRoute: "/sign",
+      initialRoute: "/feed",
       routes: {
         "/Splash": (context)=> Splash(),
         "/login":(context)=>LoginPage(),
         "/sign":(context)=>SignPage(),
+        "/feed":(context)=>FeedPage(),
       }
     );
   }
