@@ -16,7 +16,7 @@ class _AppWidgetState extends State<AppWidget> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(primaryColor: Colors.white, primarySwatch: Colors.grey),
-      initialRoute: "/feed",
+      initialRoute: "/Splash",
       routes: {
         "/Splash": (context)=> Splash(),
         "/login":(context)=>LoginPage(),
