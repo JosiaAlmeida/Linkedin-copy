@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:linkedln/material/theme/app_images.dart';
+import 'package:linkedln/material/widget/app_home_widget/reactions_controller.dart';
 import 'package:simple_icons/simple_icons.dart';
 import 'dart:math' as math;
 
 class AppFeedNotifyWidget extends StatelessWidget {
   const AppFeedNotifyWidget({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
+  final reactions = ReactionsController();
     return Container(
       margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
       color: Colors.white,
@@ -61,7 +62,8 @@ class AppFeedNotifyWidget extends StatelessWidget {
                 children: [
                   Container(
                     child: TextButton(
-                      onPressed: () {},
+                      onPressed: (){},
+                      onLongPress: ()=> reactions.showDialog(context),
                       child: Column(
                         children: [
                           Center(
