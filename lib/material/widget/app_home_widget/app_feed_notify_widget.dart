@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:linkedln/material/theme/app_images.dart';
 import 'package:simple_icons/simple_icons.dart';
+import 'dart:math' as math;
 
 class AppFeedNotifyWidget extends StatelessWidget {
   const AppFeedNotifyWidget({Key? key}) : super(key: key);
@@ -63,7 +64,12 @@ class AppFeedNotifyWidget extends StatelessWidget {
                       onPressed: () {},
                       child: Column(
                         children: [
-                          FaIcon(FontAwesomeIcons.thumbsUp),
+                          Center(
+                            child: Transform(
+                              alignment: Alignment.center,
+                              transform: Matrix4.rotationY(math.pi),
+                              child: FaIcon(FontAwesomeIcons.thumbsUp)),
+                          ),
                           Text("Gostei", style: TextStyle(fontSize: 8))
                         ],
                       ),
