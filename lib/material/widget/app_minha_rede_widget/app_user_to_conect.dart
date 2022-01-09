@@ -8,10 +8,19 @@ class AppUserToConnect extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-      height: size.height,
-      width: size.width,
-      child: ListView.builder(itemBuilder: (BuildContext context, _){
-        return ConnectUserWidget();
-      }, itemCount: 3));
+        height: size.height,
+        width: size.width,
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(children: [
+            Text("Minha redes"),
+            ConnectUserWidget(),
+            ConnectUserWidget(),
+            ConnectUserWidget(),
+            SizedBox(
+              height: size.height * 0.3,
+            )
+          ]),
+        ));
   }
 }

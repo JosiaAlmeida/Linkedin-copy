@@ -15,10 +15,9 @@ class _AppHomeWidgetState extends State<AppHomeWidget> {
         child: ListView.builder(
       itemBuilder: (BuildContext context, _) {
         return Container(
-          color: Colors.grey.withOpacity(0.2),
-          width: MediaQuery.of(context).size.width,
-          child: AppFeedNotifyWidget()
-        );
+            color: Colors.grey.withOpacity(0.2),
+            width: MediaQuery.of(context).size.width,
+            child: AppFeedNotifyWidget());
       },
       itemCount: 3,
     ));

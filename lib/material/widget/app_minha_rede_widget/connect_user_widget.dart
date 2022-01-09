@@ -8,7 +8,7 @@ class ConnectUserWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-      // height: size.height * 0.6,
+      height: size.height * 0.58,
       width: size.width,
       margin: EdgeInsets.fromLTRB(0, 12, 0, 12),
       child: Padding(

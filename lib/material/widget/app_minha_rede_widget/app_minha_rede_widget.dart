@@ -9,9 +9,7 @@ class AppMinhaRedeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return Container(
-      width: size.width,
-      child: ListView(children: [
-        AppUserToConnect()
-      ],));
+      child: AppUserToConnect(),
+    );
   }
 }
